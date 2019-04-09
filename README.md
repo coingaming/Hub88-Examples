@@ -18,11 +18,10 @@ Prerequisite:
 2. send public key to Hub88 representative
 
 Process:
-1. encode request body
-2. sign encoded request with your private key
-3. encode result in base64
-4. put result into header X-Hub88-Signature
-5. send request
+1. sign request body with your private key
+2. encode signature in base64
+3. put result of step 2 into header X-Hub88-Signature
+4. send request
 
 **Validation of signature:**
 
@@ -35,8 +34,10 @@ Process:
 4. check that result of step 3 is valid for combination of this request body and Hub88 public key
 
 ### Examples
-We have few [code exaples](/examples) for generating of signature and it's validation. Also [`priv`](/priv) folder contains demo pair of private and public keys. 
+We have few [code examples](/examples) for generating of signature and it's validation. Also [`priv`](/priv) folder contains demo pair of private and public keys. 
 * Elixir
 * NodeJS
 * PHP
 * .NET
+
+In file [signatures.txt](signatures.txt) you can find examples of data and corresponding signature(with private key from [priv](/priv) folder)
