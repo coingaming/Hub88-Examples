@@ -13,7 +13,7 @@ openssl rsa -in private.pem -pubout > public.pub
 ### General workflow
 **Signing:**
 
-Prerequisite: 
+Prerequisite:
 1. generate private and public key.
 2. send public key to Hub88 representative
 
@@ -34,10 +34,10 @@ Process:
 4. check that result of step 3 is valid for combination of this request body and Hub88 public key
 
 ### Examples
-We have few [code examples](/examples) for generating of signature and it's validation. Also [`priv`](/priv) folder contains demo pair of private and public keys. 
+We have few [code examples](/examples) for generating of signature and it's validation. Also [`priv`](/priv) folder contains demo pair of private and public keys.
 * Elixir
 * NodeJS
 * PHP
 * .NET
 
-In file [signatures.txt](signatures.txt) you can find examples of data and corresponding signature(with private key from [priv](/priv) folder)
+In file [signatures.csv](signatures.csv) you can find examples of data and corresponding signature(signed with private key from [priv](/priv) folder). Try to get same signatures and validate these signatures with [public key](/priv/public.pub)
