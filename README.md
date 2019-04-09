@@ -35,7 +35,7 @@ Process:
 4. check that result of step 3 is valid for combination of this request body and Hub88 public key
 
 ### Examples
-We have few code exaples for generating of signature and it's validation. Also `priv` folder contains demo pair of private and public keys. 
+We have few [code exaples](/examples) for generating of signature and it's validation. Also [`priv`](/priv) folder contains demo pair of private and public keys. 
 * Elixir
 * NodeJS
 * PHP
