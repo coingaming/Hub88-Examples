@@ -1,0 +1,6 @@
+[submodule "examples/node_js"]
+	path = examples/node_js
+	url = git@github.com:coingaming/hm-crypto-nodejs.git
+[submodule "examples/elixir"]
+	path = examples/elixir
+	url = git@github.com:coingaming/hm-crypto.git
