@@ -14,7 +14,7 @@ openssl_free_key($privateKeyId);
 echo "signature: \n" . $hub88_sign . "\n";
 
 // importing public key
-$hub88_pub_key = openssl_pkey_get_public(file_get_contents('../../priv/public.pub'));
+$hub88_pub_key = openssl_pkey_get_public(file_get_contents('../../priv/public.pem'));
 // verifying signature for $data and imported public key
 // note that signature firstly was decoded from base64
 $valid = openssl_verify($data, base64_decode($hub88_sign), $hub88_pub_key, 'RSA-SHA256');

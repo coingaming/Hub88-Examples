@@ -40,4 +40,4 @@ We have few [code examples](/examples) for generating of signature and it's vali
 * PHP
 * .NET
 
-In file [signatures.csv](signatures.csv) you can find examples of data and corresponding signature(signed with private key from [priv](/priv) folder). Try to get same signatures and validate these signatures with [public key](/priv/public.pub)
+In file [signatures.csv](signatures.csv) you can find examples of data and corresponding signature(signed with private key from [priv](/priv) folder). Try to get same signatures and validate these signatures with [public key](/priv/public.pem)
