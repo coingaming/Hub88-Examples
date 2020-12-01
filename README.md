@@ -37,6 +37,7 @@ Process:
 We have few [code examples](/examples) for generating of signature and it's validation. Also [`priv`](/priv) folder contains demo pair of private and public keys.
 * Elixir
 * NodeJS
+* Java
 * PHP
 * .NET
 * Bash
