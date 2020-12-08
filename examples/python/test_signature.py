@@ -27,7 +27,7 @@ class TestSignature(unittest.TestCase):
     ]
 
     def test_sign(self):
-        private_key = get_key('../priv/private.pem')
+        private_key = get_key('../../priv/private.pem')
 
         for test_case in self.valid_test_cases:
             signature = sign(private_key, test_case['input'])
@@ -35,7 +35,7 @@ class TestSignature(unittest.TestCase):
                 signature, test_case['expected'], "shoud be equal")
 
     def test_verify(self):
-        public_key = get_key('../priv/public.pem')
+        public_key = get_key('../../priv/public.pem')
 
         for test_case in self.valid_test_cases:
             signature = test_case['expected']
